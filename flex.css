@@ -1,0 +1,240 @@
+/* ##############################################
+DEV CAMP /  PT Full Stack Development with JavaScript, Python, React.
+Checkpoint 2 / M1C2 Flexbox Assignment
+Student : Brahim AMZIL
+############################################## */
+
+
+/****** COMMON ******/
+html {
+    font-family: "Lato", sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 120px; 
+}
+
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #73dab2;
+    border-radius: 8px;
+}
+
+
+/****** flexOne ******/
+
+.flexOne {
+    display: flex;
+}
+
+.flexOne .square {
+    margin-right: 5px; 
+}
+
+
+
+/****** flexTwo ******/
+.flexTwo {
+    display: flex; 
+    flex-direction: column; 
+}
+.flexTwo .square {
+    margin: 2px; 
+}
+
+
+/****** flexThree ******/
+.flexThree {
+    display: flex; 
+    flex-direction: row-reverse;   
+}
+
+.flexThree .square {
+    margin: 2px; 
+    padding: 12px;
+    font-size: 46px;
+}
+
+
+
+
+/****** flexFour ******/
+.flexFour {
+    display: flex; 
+    flex-flow: row wrap; 
+    width: 350px; 
+}
+.flexFour .square {
+    margin: 5px; 
+    background-color: #3d8b6d; 
+
+}
+
+
+
+/****** flexFive ******/
+.flexFive {
+    display: flex; 
+    width: 350px; 
+}
+
+.flexFive .item {
+    background-color: #0b6643; 
+    width: 100px; 
+    height: 100px; 
+    margin: 2px; 
+    border-radius: 8px;
+}
+#grow {
+    flex-grow: 2; 
+}
+
+
+/****** flexSix ******/
+.flexSix {
+    display: flex; 
+    width: 500px; 
+    height: 400px; 
+    background-color: #f1f1f1; 
+    flex-direction: column; 
+}
+.flexSix .one {
+    display: flex; 
+    justify-content: space-around; 
+}
+
+.flexSix .two {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 50px 0; 
+    background-color: #d6d6d6; 
+}
+
+.flexSix .three {
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+
+
+/****** flexSeven ******/
+.flexSeven {
+    display: flex; 
+    width: 500px; 
+    height: 400px; 
+    justify-content: space-between; 
+    background-color: #f1f1f1; 
+}
+
+.flexSeven > div {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.flexSeven .one {
+    justify-content: center; 
+}
+
+.flexSeven .two {
+    justify-content: flex-end; 
+    background-color: #dfdfdf; 
+}
+
+.flexSeven .three {
+    justify-content: flex-start; 
+}
+
+.flexSeven .four {
+    justify-content: space-between; 
+    background-color: #dfdfdf; 
+}
+
+
+
+/****** flexEight ******/
+.flexEight {
+    display: flex; 
+    width: 300px; 
+    height: 400px; 
+    background-color: #eeeeee; 
+}
+
+.flexEight .one,
+.flexEight .two,
+.flexEight .three {
+    display: flex; 
+}
+
+.flexEight .one {
+    align-items: center;
+}
+
+.flexEight .two {
+    align-items: flex-end; 
+}
+
+.flexEight .three {
+    align-items: flex-start; 
+}
+
+
+
+/****** flexNine ******/
+
+.flexNine {
+    display: flex; 
+    width: 450px; 
+    height: 250px; 
+    background-color: #eeeeee; 
+    align-items: flex-start; 
+    justify-content: space-evenly; 
+}
+
+#special {
+    align-self: flex-end; 
+}
+
+
+
+
+
+
+/**** SEPARATOR HR ****/
+.container {
+    position: relative;
+    text-align: center;
+    margin-top: 140px;
+    margin-bottom: 90px;
+} 
+
+hr {
+  width: 75%;
+  border: 1px dashed rgb(185, 185, 185); 
+  margin: 0 auto;
+}
+
+.grid-label {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(214, 214, 214);
+  background-color: white;
+  padding: 8px;
+} 
